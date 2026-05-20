@@ -66,7 +66,18 @@ cargo run -p wasm-kv-demo -- redis set default mykey "hello"
 cargo run -p wasm-kv-demo -- redis get default mykey
 ```
 
-## Related
+## Related contributions
+
+This demo is part of a broader set of contributions to the WebAssembly / Bytecode Alliance ecosystem:
+
+| Contribution | Repo | Notes |
+|---|---|---|
+| [`wasmtime-wasi-keyvalue-redb`](https://github.com/cargopete/wasmtime-wasi-keyvalue-redb) | standalone crate | embedded redb backend for `wasi:keyvalue` |
+| [`wasmtime-wasi-keyvalue-redis`](https://github.com/cargopete/wasmtime-wasi-keyvalue-redis) | standalone crate | Redis backend, satisfies Phase 2 portability criteria |
+| [wrpc #1229](https://github.com/bytecodealliance/wrpc/pull/1229) | bytecodealliance/wrpc | streams TCP client + server examples |
+| [wkg #204](https://github.com/bytecodealliance/wasm-pkg-tools/pull/204) | bytecodealliance/wasm-pkg-tools | improved error message for missing package version |
+
+## Related projects
 
 - [WebAssembly/wasi-keyvalue](https://github.com/WebAssembly/wasi-keyvalue) — the proposal
 - [bytecodealliance/wasmtime](https://github.com/bytecodealliance/wasmtime) — the runtime
