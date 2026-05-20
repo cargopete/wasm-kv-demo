@@ -1,0 +1,12 @@
+[package]
+name = "wasm-kv-demo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wasmtime = { version = "44.0", features = ["runtime", "component-model", "std"] }
+wasmtime-wasi = { version = "44.0" }
+wasmtime-wasi-keyvalue-redb = { path = "../../wasmtime-wasi-keyvalue-redb/crates/wasi-keyvalue-redb" }
+wasmtime-wasi-keyvalue-redis = { path = "../../wasmtime-wasi-keyvalue-redis/crates/wasi-keyvalue-redis" }
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
